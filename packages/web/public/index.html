@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Seed</title>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      function envVar(maybeVar, substitute) {
+        return maybeVar.indexOf("${") === -1 ? maybeVar : substitute;
+      }
+
+      window.ENVIRONMENT_VARIABLES = {
+        API_URL: envVar("${API_URL}", "<%= API_URL %>"),
+      };
+    </script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="app"></div>
+  </body>
+</html>

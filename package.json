@@ -1,0 +1,24 @@
+{
+  "name": "seed",
+  "private": true,
+  "lint-staged": {
+    "*": []
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "start": "lerna run start --parallel",
+    "build": "lerna run build --stream",
+    "lint": "lerna run lint --stream",
+    "setup": "npm install && npm run bootstrap",
+    "prepare": "husky install",
+    "precommit": "lint-staged && sh ./.hooks/check_branch_naming.sh"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "16.1.0",
+    "@commitlint/config-conventional": "16.0.0",
+    "@commitlint/config-lerna-scopes": "16.0.0",
+    "lint-staged": "12.3.3",
+    "husky": "7.0.4",
+    "lerna": "4.0.0"
+  }
+}
