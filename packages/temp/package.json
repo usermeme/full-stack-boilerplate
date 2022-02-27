@@ -1,6 +1,6 @@
 {
   "name": "@package/temp",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "RomanYankovich <romanyankovich98@gmail.com>",
   "license": "ISC",
   "main": "dist/index.js",
@@ -9,9 +9,9 @@
     "lint": "eslint --fix --ext .ts,.js ."
   },
   "devDependencies": {
-    "@configs/lint-staged": "0.0.0",
-    "@configs/prettier": "0.0.0",
-    "@configs/eslint": "0.0.0",
+    "@configs/eslint": "^1.0.0",
+    "@configs/lint-staged": "^1.0.0",
+    "@configs/prettier": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "5.10.2",
     "@typescript-eslint/parser": "5.10.2",
     "deepmerge": "4.2.2",
@@ -20,6 +20,5 @@
     "eslint-plugin-import": "2.25.4",
     "eslint-plugin-prettier": "4.0.0",
     "prettier": "2.5.1"
-  },
-  "dependencies": {}
+  }
 }
